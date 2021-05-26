@@ -35,6 +35,7 @@ for line in fileinput.input():
                 delivery_mode=RABBITMQ_DELIVERY_MODE,
             )
         )
+        print(message)
     except:
         pass
 

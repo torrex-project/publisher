@@ -3,6 +3,8 @@ version: "3"
 services:
   publisher:
     build: ./publisher
+    network_mode: "host"
+    tty: true
     environment:
       - RABBITMQ_HOST
       - RABBITMQ_USER
